@@ -11,11 +11,11 @@
     color:black;
 }
 
+
 /* Header */
 header
 {
-    margin: 0 0 0 50px; 
-    padding: 30px 0 0 0;
+    margin:0 30px; 
     display: flex;
     justify-content: space-between;
 }
@@ -48,9 +48,13 @@ header a
 nav a:hover
 {
     color: #0065FC;
-    padding-top: 50px;
+    padding-top: 22px;
     border-top: 3px solid #0065FC;
 }
+
+/* Main */
+
+/* Search Section */
 
 /* Media Queries pour les tablettes */
 @media all and (min-width: 768px) and (max-width: 991px)
