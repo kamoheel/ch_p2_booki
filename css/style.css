@@ -1,0 +1,5 @@
+*
+{
+    /* Les propriete width et height incluent le contenu padding et border mais pas la margin */
+    box-sizing: border-box;
+}
