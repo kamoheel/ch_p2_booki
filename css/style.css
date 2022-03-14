@@ -3,3 +3,53 @@
     /* Les propriete width et height incluent le contenu padding et border mais pas la margin */
     box-sizing: border-box;
 }
+
+#container
+{
+    width: 100%;
+    font-family: "Raleway", Arial, sans-serif;
+    color:black;
+}
+
+/* Header */
+header
+{
+    margin: 0 50px; 
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    width: 100px;
+    object-fit: contain;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav li
+{
+    list-style: none;
+    padding-left: 50px; 
+}
+
+a
+{
+    padding: 0 30px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    padding-top: 50px;
+    border-top: 3px solid #0065FC;
+}
+
+
+
