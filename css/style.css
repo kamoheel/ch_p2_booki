@@ -1,60 +1,178 @@
+/* Base */
+
 *
 {
     /* Les propriete width et height incluent le contenu padding et border mais pas la margin */
     box-sizing: border-box;
 }
 
-#container
+body, input
 {
-    width: 100%;
-    font-family: "Raleway", Arial, sans-serif;
-    color:black;
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
 }
 
+h1, h2
+{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h3
+{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Layout */
+header, section
+{
+    width: 95%;
+    margin: 0 auto;
+}
+footer
+{
+    width: 100%;
+    margin: 0;
+}
+
+/* Modules */
 
 /* Header */
 header
 {
-    margin:0 30px; 
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 header img
 {
-    width: 100px;
+    padding-left: 10px;
+    width: 80px;
     object-fit: contain;
 }
 
 nav ul
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav li
 {
     list-style: none;
-    width:200px;
 }
 
 header a
 {
-    padding: 0 40px;
-    color: black;
-    text-decoration: none;
+    padding: 0 30px;
 }
 
 nav a:hover
 {
     color: #0065FC;
-    padding-top: 22px;
-    border-top: 3px solid #0065FC;
-}
+    padding-top: 34px; 
+    border-top: 2px solid #0065FC;
+} 
 
 /* Main */
 
 /* Search Section */
+
+#search
+{
+    margin-top: 30px;
+    line-height: 10px;
+}
+
+form
+{
+    margin-top:15px;
+    width: 30%;
+    height:35px;
+    position: relative;
+    left: 0;
+
+}
+
+/* map pin */
+form .form-item:nth-child(1)
+{
+    width: 12%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    position: absolute;
+    left: 0;
+}
+form .form-item i
+{
+    font-size: 13px;
+    display:block;
+    position: absolute;
+    left:50%;  
+    top:35%; 
+    width:auto;
+    white-space: nowrap;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+/* search input */
+form .form-item:nth-child(2)
+{
+    font-size: 12px;
+    padding-left: 10px;
+    border: 1px solid #F2F2F2;
+    font-weight:700;
+    position: absolute;
+    left:12%;
+    width: 56%;
+    height: 100%;
+}
+
+/* search button */
+form .form-item:nth-child(3)
+{
+    background-color: #0065FC;
+    border: none;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    position: absolute;
+    left: 68%;
+    width: 32%;
+    height: 100%;
+}
+form .form-item:nth-child(3) input
+{
+    font-size: 12px;
+    font-weight: 700;
+    color:white;
+    background: none;
+    border: none;
+    position: absolute;
+    left:50%;  
+    top:25%; 
+    width:auto;
+    white-space: nowrap;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+form .form-item:nth-child(3) i
+{
+    display:none;
+}
 
 /* Media Queries pour les tablettes */
 @media all and (min-width: 768px) and (max-width: 991px)

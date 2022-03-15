@@ -5,52 +5,50 @@
         <title>Booki</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/0aff4b8819.js" crossorigin="anonymous"></script>
         <!--not working: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <div id="container">
-            <!-- Header -->
-            <header>
-                <img src="images/logo/Booki.png" alt="Logo de Booki"/>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <!-- Search section -->
-                <section id="search">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <form>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" value="Marseille, France" />
-                        <input type="submit" value="Rechercher" />
-                    </form>
-                    <div id="filters">
-                        <p>Filtres</p>
-                        <div class="filter-buttons">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <h2>économique</h2>
-                        </div>
-                        <div class="filter-buttons">
-                            <i class="fa-solid fa-child"></i>
-                            <h2>familial</h2>
-                        </div>  
-                        <div class="filter-buttons">
-                            <i class="fa-solid fa-heart"></i>
-                            <h2>romantique</h2>
-                        </div>                                                
+        <!-- Header -->
+        <header>
+            <img src="images/logo/Booki.png" alt="Logo de Booki"/>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Search section -->
+            <section id="search">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form>
+                    <span class="form-item"><i class="fa-solid fa-location-dot"></i></span>
+                    <input class="form-item" type="search" value="Marseille, France" />
+                    <span class="form-item"><input type="submit" value="Rechercher" /><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
+                <div id="filters">
+                    <p>Filtres</p>
+                    <div class="filter-buttons">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <h2>économique</h2>
                     </div>
-                </section>
-            </main>
-        </div>
+                    <div class="filter-buttons">
+                        <i class="fa-solid fa-child"></i>
+                        <h2>familial</h2>
+                    </div>  
+                    <div class="filter-buttons">
+                        <i class="fa-solid fa-heart"></i>
+                        <h2>romantique</h2>
+                    </div>                                                
+                </div>
+            </section>
+        </main>
     </body>
 </html>
 
