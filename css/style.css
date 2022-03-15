@@ -63,6 +63,8 @@ header img
 
 nav ul
 {
+    margin-left: 0;
+    padding-left: 0;
     display: flex;
     justify-content: center;
 }
@@ -107,7 +109,7 @@ form
 /* map pin */
 form .form-item:nth-child(1)
 {
-    width: 12%;
+    width: 13%;
     height: 100%;
     background-color: #F2F2F2;
     border-top-left-radius: 11px;
@@ -136,8 +138,8 @@ form .form-item:nth-child(2)
     border: 1px solid #F2F2F2;
     font-weight:700;
     position: absolute;
-    left:12%;
-    width: 56%;
+    left:13%;
+    width: 55%;
     height: 100%;
 }
 
@@ -177,6 +179,7 @@ form .form-item:nth-child(3) i
 /* Media Queries pour les tablettes */
 @media all and (min-width: 768px) and (max-width: 991px)
 {
+    /* header */
     header
     {
         flex-direction: column;
@@ -186,6 +189,8 @@ form .form-item:nth-child(3) i
     nav ul
     {
         margin-top: 40px;
+        justify-content: center;
+        align-items: center;
     }
     
     header a
@@ -198,27 +203,99 @@ form .form-item:nth-child(3) i
     {
         border-top: 0;
         border-bottom: 3px solid #0065FC;
+    }
+
+     /* Main */
+    section 
+    {
+        width:50%;
+        margin: auto;
+    }
+
+    /* Search Section */
+    h1
+    {
+        font-size:16px;
+        line-height: 1;
+    }
+    #search h1, p
+    {
+        text-align: justify;
+    }
+    form 
+    {
+        width:100%;
+        max-width: 250px;
+    }
+
+    form .form-item:nth-child(1)
+    {
+        width: 13%;
+    }
+
+    form .form-item:nth-child(2)
+    {
+        font-size: 14px;
+        width: 74%;
+        left: 13%;
+    }
+
+    form .form-item:nth-child(3)
+    {
+        width: 13%;
+        left: 85%;
+        border-radius: 11px;
+    }
+    form .form-item:nth-child(3) input
+    {
+        display:none;
+    }
+
+    form .form-item:nth-child(3) i
+    {
+        display: block;
+        font-size: 12px;
+        color:white;
+        position: absolute;
+        left:50%;  
+        top:35%; 
+        width:auto;
+        white-space: nowrap;
+        -webkit-transform:translateX(-50%);
+        transform:translateX(-50%);
     }
 }
 
 /* Media Queries pour les mobiles */
 @media all and (max-width: 768px)
 {
+
+    body
+    {
+        text-align: left;
+    }
+
+    h1
+    {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+    /* header */
     header
     {
         flex-direction: column;
         align-items: center;
-        font-size: 20px;
+        width: 100%;
     }
-
+   
     nav ul
     {
-        margin-top: 40px;
+        margin-top: 30px;
     }
-    
+
     header a
     {
-        padding-bottom: 15px;
+        padding: 0 50px 10px 50px;
         border-bottom: 3px solid #F2F2F2;
     }
 
@@ -226,6 +303,58 @@ form .form-item:nth-child(3) i
     {
         border-top: 0;
         border-bottom: 3px solid #0065FC;
+    }
+
+    /* Main */
+    /* Search Section */
+   
+    #search h1, p
+    {
+        padding: 0 26px;
+    }
+
+    form 
+    {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    form .form-item:nth-child(1)
+    {
+        width: 13%;
+        left:5%;
+    }
+
+    form .form-item:nth-child(2)
+    {
+        font-size: 14px;
+        width: 74%;
+        left: 18%;
+    }
+
+    form .form-item:nth-child(3)
+    {
+        width: 13%;
+        left: 85%;
+        border-radius: 11px;
+    }
+    form .form-item:nth-child(3) input
+    {
+        display:none;
+    }
+
+    form .form-item:nth-child(3) i
+    {
+        display: block;
+        font-size: 12px;
+        color:white;
+        position: absolute;
+        left:50%;  
+        top:35%; 
+        width:auto;
+        white-space: nowrap;
+        -webkit-transform:translateX(-50%);
+        transform:translateX(-50%);
     }
 }
 
