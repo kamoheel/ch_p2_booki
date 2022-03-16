@@ -1,4 +1,4 @@
-/* Base */
+/**** Base ****/
 
 *
 {
@@ -8,14 +8,21 @@
 
 body, input
 {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Raleway', sans-serif;
     color: black;
 }
 
-h1, h2
+h1
 {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2
+{
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -32,21 +39,27 @@ a
 }
 
 
-/* Layout */
+/**** Layout ****/
+body
+{
+    max-width: 1440px;
+}
+
 header, section
 {
-    width: 95%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 5%;
 }
+
 footer
 {
     width: 100%;
     margin: 0;
 }
 
-/* Modules */
+/**** Modules ****/
 
-/* Header */
+/*** Header ***/
 header
 {
     display: flex;
@@ -86,24 +99,28 @@ nav a:hover
     border-top: 2px solid #0065FC;
 } 
 
-/* Main */
+/*** Main ***/
 
-/* Search Section */
+/** Search Section **/
 
 #search
 {
     margin-top: 30px;
-    line-height: 10px;
+}
+
+#search h1, p
+{
+    line-height: 20px;
 }
 
 form
 {
-    margin-top:15px;
     width: 30%;
+    max-width: 327px;
     height:35px;
-    position: relative;
-    left: 0;
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* map pin */
@@ -114,21 +131,13 @@ form .form-item:nth-child(1)
     background-color: #F2F2F2;
     border-top-left-radius: 11px;
     border-bottom-left-radius: 11px;
-    position: absolute;
-    left: 0;
+    display: flex; /*Pour centrer l'icône i avec margin:auto*/
 }
 form .form-item i
 {
-    font-size: 13px;
-    display:block;
-    position: absolute;
-    left:50%;  
-    top:35%; 
-    width:auto;
-    white-space: nowrap;
-    -webkit-transform:translateX(-50%);
-    transform:translateX(-50%);
-}
+    font-size: 13px; 
+    margin: auto;
+} 
 
 /* search input */
 form .form-item:nth-child(2)
@@ -137,8 +146,6 @@ form .form-item:nth-child(2)
     padding-left: 10px;
     border: 1px solid #F2F2F2;
     font-weight:700;
-    position: absolute;
-    left:13%;
     width: 55%;
     height: 100%;
 }
@@ -150,10 +157,9 @@ form .form-item:nth-child(3)
     border: none;
     border-top-right-radius: 11px;
     border-bottom-right-radius: 11px;
-    position: absolute;
-    left: 68%;
     width: 32%;
     height: 100%;
+    display: flex;
 }
 form .form-item:nth-child(3) input
 {
@@ -162,13 +168,7 @@ form .form-item:nth-child(3) input
     color:white;
     background: none;
     border: none;
-    position: absolute;
-    left:50%;  
-    top:25%; 
-    width:auto;
-    white-space: nowrap;
-    -webkit-transform:translateX(-50%);
-    transform:translateX(-50%);
+    margin: auto;
 }
 
 form .form-item:nth-child(3) i
@@ -176,8 +176,50 @@ form .form-item:nth-child(3) i
     display:none;
 }
 
-/* Media Queries pour les tablettes */
-@media all and (min-width: 768px) and (max-width: 991px)
+/* filters */
+#filters
+{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#filters h2::first-letter
+{
+    /* 1st letter capitalized to get the accents */
+    text-transform: capitalize;  
+}
+
+.filter-buttons
+{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 40px;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    border-radius: 30px;
+}
+
+.filter-buttons i
+{
+    font-size: 14px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 13px 13px;
+    border-radius: 100%;
+}
+
+.filter-buttons h2
+{
+    padding: 0 14px 0 9px;
+}
+
+
+/**** Media Queries pour les tablettes ****/
+@media all and (min-width: 769px) and (max-width: 991px)
 {
     /* header */
     header
@@ -213,19 +255,16 @@ form .form-item:nth-child(3) i
     }
 
     /* Search Section */
-    h1
-    {
-        font-size:16px;
-        line-height: 1;
-    }
+ 
     #search h1, p
     {
-        text-align: justify;
+        text-align: left;
     }
     form 
     {
         width:100%;
         max-width: 250px;
+        position: relative;
     }
 
     form .form-item:nth-child(1)
@@ -237,14 +276,15 @@ form .form-item:nth-child(3) i
     {
         font-size: 14px;
         width: 74%;
-        left: 13%;
+        border-right: none;
     }
 
     form .form-item:nth-child(3)
     {
         width: 13%;
-        left: 85%;
         border-radius: 11px;
+        position:absolute;
+        right: 5%;
     }
     form .form-item:nth-child(3) input
     {
@@ -256,17 +296,10 @@ form .form-item:nth-child(3) i
         display: block;
         font-size: 12px;
         color:white;
-        position: absolute;
-        left:50%;  
-        top:35%; 
-        width:auto;
-        white-space: nowrap;
-        -webkit-transform:translateX(-50%);
-        transform:translateX(-50%);
     }
 }
 
-/* Media Queries pour les mobiles */
+/**** Media Queries pour les mobiles ****/
 @media all and (max-width: 768px)
 {
 
@@ -285,7 +318,6 @@ form .form-item:nth-child(3) i
     {
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
    
     nav ul
@@ -308,7 +340,7 @@ form .form-item:nth-child(3) i
     /* Main */
     /* Search Section */
    
-    #search h1, p
+    #search 
     {
         padding: 0 26px;
     }
@@ -317,26 +349,26 @@ form .form-item:nth-child(3) i
     {
         width: 100%;
         max-width: 300px;
+        position: relative;
     }
 
     form .form-item:nth-child(1)
     {
         width: 13%;
-        left:5%;
     }
 
     form .form-item:nth-child(2)
     {
         font-size: 14px;
         width: 74%;
-        left: 18%;
     }
 
     form .form-item:nth-child(3)
     {
         width: 13%;
-        left: 85%;
         border-radius: 11px;
+        position:absolute;
+        right: 15px;
     }
     form .form-item:nth-child(3) input
     {
@@ -348,13 +380,14 @@ form .form-item:nth-child(3) i
         display: block;
         font-size: 12px;
         color:white;
-        position: absolute;
-        left:50%;  
-        top:35%; 
-        width:auto;
-        white-space: nowrap;
-        -webkit-transform:translateX(-50%);
-        transform:translateX(-50%);
+        margin: auto;
+    }
+
+    /* Filtres */
+    #filters h2:nth-child(1)
+    {
+        /* Allows to wrap just after 'Filtres' */
+        flex-basis: 100%;
     }
 }
 
