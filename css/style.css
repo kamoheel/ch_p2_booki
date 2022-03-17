@@ -95,7 +95,7 @@ header a
 nav a:hover
 {
     color: #0065FC;
-    padding-top: 34px; 
+    padding-top: 35px; 
     border-top: 2px solid #0065FC;
 } 
 
@@ -210,6 +210,7 @@ form .form-item:nth-child(3) i
 
 .filter-buttons i
 {
+    margin-top: 0;
     font-size: 14px;
     color: #0065FC;
     background-color: #DEEBFF;
@@ -232,12 +233,18 @@ form .form-item:nth-child(3) i
 
 #search p i
 {
+    margin: auto;
     font-size: 9px;
     color: #0065FC;
     border: 1px solid #F2F2F2;
     padding: 5px 8px;
     border-radius: 100%;
     margin-right: 10px;
+}
+
+#search p #nb-accom
+{
+    width: 100%;
 }
 
 /** Accomodation Section **/
