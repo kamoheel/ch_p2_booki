@@ -250,12 +250,14 @@ form .form-item:nth-child(3) i
 
 #accom-marseille
 {
-    width: 57%;
+    width: 880px;
+    height: 625px;
     background-color: #F2F2F2;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 20px;
 }
 
@@ -266,28 +268,51 @@ form .form-item:nth-child(3) i
 
 .accom-card
 {
+    min-width: 200px;
     width: 27%;
-    height: 100px;
-    margin: 0 auto;
+    height: 32%;
+    /* margin: 0 auto; */
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-img
+{
+    width: 100%;
+    height: 58%;
+    margin: 0 auto;
+}
+.card-img img
+{
+    padding: 1.5%;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-text
+{
+    height: 42%;
+    margin: 2% 0 5% 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-}
-.accom-card img
-{
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
 }
 
-.accom-card p
+.card-text h3
 {
-    width: 100%;
-    font-size: 10px;
+    margin: 0;
+}
+
+.card-text p
+{
+    font-size: 11px;
+    margin: 0;
 }
 
 .price-low
@@ -295,7 +320,7 @@ form .form-item:nth-child(3) i
     font-weight: bold;
 }
 
-.accom-card .stars
+.card-text .stars
 {
     display: flex;
     justify-content: flex-start;
@@ -303,7 +328,7 @@ form .form-item:nth-child(3) i
 
 .stars i
 {
-    padding:0.5px;
+    padding:0.8%;
     font-size: 8px;
 }
 
