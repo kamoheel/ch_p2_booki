@@ -261,47 +261,74 @@ form .form-item:nth-child(3) i
     padding-left: 20px;
 }
 
-#accom-cards-list
+/* #accom-cards-list
 {
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.accom-card
+#accom-marseille .card:nth-child(3)
 {
-    min-width: 200px;
+    flex-basis: 100%;
+} */
+
+.card
+{
+    min-width: 200px; 
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    box-shadow: 3px 3px 10px lightgray, -3px -3px 10px lightgray;
+}
+
+#accom-marseille .card
+{
+    
     width: 27%;
     height: 32%;
     /* margin: 0 auto; */
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.card-img
+.card:hover
 {
-    width: 100%;
-    height: 58%;
-    margin: 0 auto;
+    background-color: #DEEBFF;
 }
+
 .card-img img
 {
     padding: 1.5%;
     width: 100%;
     height: 100%;
-    object-fit:cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 
 .card-text
 {
-    height: 42%;
     margin: 2% 0 5% 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#accom-marseille .card-img
+{
+    margin: 0 auto;
+    width: 100%;
+    height: 58%;
+}
+
+#accom-marseille .card-img img
+{
+    object-fit:cover; /*aspect ratio maintained while filling the container clipped if does not fit*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#accom-marseille .card-text
+{
+    height: 42%;
 }
 
 .card-text h3
@@ -345,12 +372,60 @@ form .form-item:nth-child(3) i
 
 #popular-marseille
 {
-    width: 28%;
+    width: 420px;
+    height: 625px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
 }
 
+#title-popular
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
 
+#title-popular h2, i
+{
+    margin-top: 5%;
+}
 
+#popular-marseille .card
+{
+    width: 80%;
+    height: 23%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
+#popular-marseille .card-img
+{
+    margin: 0;
+    width: 40%;
+}
+
+#popular-marseille .card-img img
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+
+#popular-marseille .card-text
+{
+    width: 60%;
+}
+
+#popular-marseille .stars
+{
+    margin-top: 15%;
+}
 
 /**** Media Queries pour les tablettes ****/
 @media all and (min-width: 769px) and (max-width: 991px)
