@@ -268,17 +268,19 @@ form .form-item:nth-child(3) i
     padding-left: 20px;
 }
 
-/* #accom-cards-list
+#accom-cards-list
 {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#accom-marseille .card:nth-child(3)
+#accom-cards_list:nth-child(3)
 {
-    flex-basis: 100%;
-} */
+    flex-basis: 33.33%; /*flex wrap after 3rd element*/
+}
+
 
 .card
 {
@@ -402,10 +404,17 @@ form .form-item:nth-child(3) i
     margin-top: 5%;
 }
 
+#popular-cards-list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #popular-marseille .card
 {
     width: 80%;
-    height: 23%;
+    height: 25%;
     margin: 0 auto;
     flex-direction: row;
     justify-content: flex-start;
@@ -431,7 +440,7 @@ form .form-item:nth-child(3) i
 
 #popular-marseille .stars
 {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 /**** Media Queries pour les tablettes ****/
