@@ -492,11 +492,8 @@ form .form-item:nth-child(3) i
     margin-left: 5%;
 }
 
-
-.tall-card
+#activities-cards .tall-card, #activities-cards .small-card, #activities-cards .vsmall-card
 {
-    width: 23%;
-    height: 350px;
     border-radius: 15px;
     background-color: white;
     display: flex;
@@ -504,7 +501,14 @@ form .form-item:nth-child(3) i
     box-shadow: 3px 3px 10px lightgray, -3px -3px 10px lightgray;
 }
 
-.tall-card .card-img
+
+#activities-cards .tall-card
+{
+    width: 23%;
+    height: 350px;
+}
+
+#activities-cards .tall-card .card-img
 {
     height: 90%;
 }
@@ -515,37 +519,30 @@ form .form-item:nth-child(3) i
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.small-card
+} 
+
+#activities-cards .small-card
 {
     width: 100%;
     height: 190px;
-    border-radius: 15px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 3px 3px 10px lightgray, -3px -3px 10px lightgray;
 }
 
-.small-card .card-img
+#activities-cards .small-card .card-img
 {
     height: 80%;
 }
 
-.vsmall-card
+#activities-cards .vsmall-card
 {
     width: 100%;
     height: 140px;
-    border-radius: 15px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 3px 3px 10px lightgray, -3px -3px 10px lightgray;
 }
 
-.vsmall-card .card-img
+#activities-cards .vsmall-card .card-img
 {
     height: 72%;
 }
+
+
 
 
