@@ -158,3 +158,10 @@ form .form-item:nth-child(3) i
 {
     height: 70%;
 }
+
+/* Footer */
+footer
+{
+    flex-direction: column;
+    padding: 10%;
+}

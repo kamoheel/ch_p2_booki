@@ -544,5 +544,22 @@ form .form-item:nth-child(3) i
 }
 
 
+/* Footer */
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 1% 5%;
+}
 
+.footer-list
+{
+    margin-right: 20%;
+}
 
+footer ul
+{
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
