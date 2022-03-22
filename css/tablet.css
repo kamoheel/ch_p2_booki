@@ -14,12 +14,13 @@ nav ul
 
 header a
 {
-    padding-bottom: 15px;
-    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #F2F2F2; 
 }
 
 nav a:hover
 {
+    color: #0065FC;
     border-top: 0;
     border-bottom: 3px solid #0065FC;
 }
@@ -27,12 +28,11 @@ nav a:hover
  /* Main */
 section 
 {
-    width:50%;
+    width:60%;
     margin: auto;
 }
 
 /* Search Section */
-
 #search h1, p
 {
     text-align: left;
@@ -40,7 +40,7 @@ section
 form 
 {
     width:100%;
-    max-width: 250px;
+    max-width: 350px;
     position: relative;
 }
 
@@ -75,6 +75,10 @@ form .form-item:nth-child(3) i
     color:white;
 }
 
+#filters h2
+{
+    font-size: 15px;
+}
 
 /*Accomodation Section*/
 #accomodation
@@ -107,14 +111,14 @@ form .form-item:nth-child(3) i
 
 #accom-cards-list
 {
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
+    justify-content: space-around;
+    align-items: space-between;
+    flex-wrap: wrap;
 }
 
 #accom-marseille .card
 {
-    width: 60%;
+    width: 45%;
     margin-bottom: 5px;
 }
 
