@@ -116,7 +116,7 @@ form .form-item:nth-child(3) i
 #accom-cards-list
 {
     justify-content: space-between;
-    align-items: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
