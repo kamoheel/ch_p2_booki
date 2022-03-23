@@ -201,6 +201,7 @@ form .form-item:nth-child(3) i
 {
     width: 100%;
     margin-bottom: 15px;
+    height: 200px;
 }
 
 #accom-marseille .card-img
@@ -210,7 +211,7 @@ form .form-item:nth-child(3) i
 
 #accom-marseille .card-text
 {
-    height: 35%;
+    height: 33%;
     padding: 0 0 5% 5%;
 }
 

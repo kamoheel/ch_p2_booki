@@ -12,10 +12,14 @@ nav ul
     align-items: center;
 }
 
+header
+{
+    border-bottom: 3px solid #F2F2F2; 
+}
+
 header a
 {
-    padding-bottom: 20px;
-    border-bottom: 3px solid #F2F2F2; 
+    padding-bottom: 19px;
 }
 
 nav a:hover
@@ -28,7 +32,7 @@ nav a:hover
  /* Main */
 section 
 {
-    width:60%;
+    width:70%;
     margin: auto;
 }
 
@@ -111,7 +115,7 @@ form .form-item:nth-child(3) i
 
 #accom-cards-list
 {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: space-between;
     flex-wrap: wrap;
 }
@@ -119,7 +123,7 @@ form .form-item:nth-child(3) i
 #accom-marseille .card
 {
     width: 45%;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* Activities */
