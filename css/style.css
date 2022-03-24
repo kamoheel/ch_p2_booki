@@ -561,12 +561,12 @@ footer
 {
     display: flex;
     background-color: #F2F2F2;
-    padding: 1% 5%;
+    padding: 1% 2.5%;
 }
 
 .footer-list
 {
-    margin-right: 20%;
+    margin-right: 18%;
 }
 
 footer ul
