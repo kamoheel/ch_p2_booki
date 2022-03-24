@@ -38,6 +38,11 @@ a
 }
 
 /**** Layout ****/
+body
+{
+    margin: 0;
+}
+
 header, section
 {
     width: 95%;
