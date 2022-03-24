@@ -168,3 +168,19 @@ form .form-item:nth-child(3) i
 {
     height: 70%;
 }
+
+footer
+{
+    flex-direction: column;
+    padding: 5% 0 5% 10%;
+}
+
+footer h3
+{
+    font-size: 18px;
+}
+
+footer a
+{
+    font-size: 17px;
+}
